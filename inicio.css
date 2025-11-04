@@ -1,0 +1,18 @@
+body{
+    background-color: #efeded;
+}
+/*estilos para la seccion de informacion*/
+ .Informacion{
+            color: var(--Primary-color);/*color de la fuente*/
+            background-color: var(--white-color);/*color de fondo*/
+            padding: 20px;/*espacio entre el borde y el contenido*/
+            border-radius: 10px;/*esquinas redondeadas*/
+            margin: 20px;/*margen entre los elementos*/
+        h1{
+        color : var(--secondary-color);/*color de la fuente*/
+        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
+        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
+        text-transform: uppercase;/*letra mayuscula*/
+        text-align : center;/*alinear el texto al centro*/
+    }  
+        }
