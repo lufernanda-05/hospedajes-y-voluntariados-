@@ -3,16 +3,177 @@ body{
 }
 /*estilos para la seccion de informacion*/
  .Informacion{
-            color: var(--Primary-color);/*color de la fuente*/
-            background-color: var(--white-color);/*color de fondo*/
-            padding: 20px;/*espacio entre el borde y el contenido*/
-            border-radius: 10px;/*esquinas redondeadas*/
-            margin: 20px;/*margen entre los elementos*/
+            color: var(--Primary-color);
+            background-color: var(--white-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;/
         h1{
-        color : var(--secondary-color);/*color de la fuente*/
-        font-family: 'Times New Roman', Times, serif;/*fuente del texto*/
-        background: linear-gradient(40deg, rgb(77, 222, 232) 40%, rgb(145, 96, 250) 60%);
-        text-transform: uppercase;/*letra mayuscula*/
-        text-align : center;/*alinear el texto al centro*/
+        color : var(--secondary-color);
+        font-family: 'Times New Roman', Times, serif;
+        background: linear-gradient(40deg, rgb(60, 99, 253) 40%, rgb(145, 96, 250) 60%);
+        text-transform: uppercase;
+        text-align : center;
     }  
         }
+/*----------*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      flex: 1 1 auto;
+    }
+    nav {
+      flex: 1 1 auto;
+      text-align: right;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+    nav a:hover {
+      color: #a0c4ff;
+    }
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      width: 100%;
+    }
+    main h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      color: #004080;
+      text-align: center;
+    }
+    main p {
+      font-size: 1.25rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    .button-group a {
+      background-color: #0073e6;
+      color: white;
+      padding: 1.25rem 2.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 15px rgba(0,115,230,0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      flex: 1 1 260px;
+      text-align: center;
+      font-size: 1.1rem;
+      white-space: nowrap;
+    }
+    .button-group a:hover {
+      background-color: #005bb5;
+      box-shadow: 0 8px 20px rgba(0,91,181,0.5);
+    }
+    footer {
+      background-color: #222f44;
+      color: white;
+      padding: 1.5rem 3rem;
+      text-align: center;
+    }
+    footer .social-icons a {
+      display: inline-block;
+      margin: 0 1rem;
+      font-size: 2rem;
+      color: white;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    footer .social-icons a:hover {
+      color: #7ec8e3;
+    }
+
+    /* responsive*/
+    @media (max-width: 900px) {
+      main h1 {
+        font-size: 2.2rem;
+      }
+      main p {
+        font-size: 1.1rem;
+        max-width: 100%;
+        padding: 0 1rem;
+      }
+      .button-group {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .button-group a {
+        flex: 1 1 100%;
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      header {
+        padding: 1rem 1.5rem;
+      }
+      nav {
+        text-align: center;
+        margin-top: 0.8rem;
+        flex-basis: 100%;
+      }
+      nav a {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 0.95rem;
+      }
+      footer {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+      }
+      footer .social-icons a {
+        font-size: 1.6rem;
+        margin: 0 0.6rem;
+      }
+    }
+    h1{
+        color : var(--secondary-color);
+        font-family: 'Times New Roman', Times, serif;
+        background: linear-gradient(40deg, rgb(60, 99, 253) 40%, rgb(145, 96, 250) 60%);
+        text-transform: uppercase;
+        text-align : center;
+    }
