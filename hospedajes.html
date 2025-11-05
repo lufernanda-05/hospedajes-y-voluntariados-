@@ -5,45 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hospedajes</title>
     <link rel="stylesheet" href="./hospedajes.css">
-     <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
 </head>
 <body>
-     <nav>
-      <a href="inicio.html">INICIO</a>
-      <a href="inicio.html#footer" id="contact-link">CONTACTANOS</a>
-    </nav>
+    <header>
+      <div class="logo">Mi Sitio</div>
+      <nav>
+        <a href="inicio.html">INICIO</a>
+        <a href="inicio.html#footer" id="contact-link">CONTACTANOS</a>
+      </nav>
+    </header>
+
     <main>
-    <h1> HOSPEDAJES</h1>
+      <h1>HOSPEDAJES</h1>
 
-    <form id="filtros">
-      <label for="filtro-ubicacion">Ubicación:</label>
-      <select id="filtro-ubicacion" aria-label="Filtrar por ubicación">
-        <option value=""> ubicaciones</option>
-        <option value="Ciudad A">bogota</option>
-        <option value="Ciudad B">medellin</option>
-        <option value="Ciudad C">cali</option>
-      </select>
+      <form id="filtros">
+        <label for="filtro-ubicacion">Ubicación:</label>
+        <select id="filtro-ubicacion" aria-label="Filtrar por ubicación">
+          <option value=""> ubicaciones</option>
+          <option value="Ciudad A">bogota</option>
+          <option value="Ciudad B">medellin</option>
+          <option value="Ciudad C">cali</option>
+        </select>
 
-      <label for="filtro-tipo">Tipo:</label>
-      <select id="filtro-tipo" aria-label="Filtrar por tipo de hospedaje">
-        <option value="">hospedajes</option>
-        <option value="Hotel">Hotel</option>
-        <option value="Hostal">Hostal</option>
-        <option value="Casa">Casa</option>
-      </select>
-    </form>
+        <label for="filtro-tipo">Tipo:</label>
+        <select id="filtro-tipo" aria-label="Filtrar por tipo de hospedaje">
+          <option value="">hospedajes</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Hostal">Hostal</option>
+          <option value="Casa">Casa</option>
+        </select>
 
-    <div id="resultados" aria-live="polite" aria-atomic="true"></div>
-  </main>
+        <label for="fecha-inicio">Fecha inicio:</label>
+        <input type="date" id="fecha-inicio" name="fecha-inicio">
 
-  <footer id="footer">
-    <div>Contáctanos</div>
-    <div class="social-icons" aria-label="Redes sociales">
-      <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp" title="WhatsApp">📱</a>
-      <a href="https://www.instagram.com/" aria-label="Instagram" title="Instagram">📸</a>
-      <a href="https://www.facebook.com/" aria-label="Facebook" title="Facebook">📘</a>
-    </div>
-  </footer>
+        <label for="fecha-final">Fecha final:</label>
+        <input type="date" id="fecha-final" name="fecha-final">
+      </form>
 
+      <div id="resultados" aria-live="polite" aria-atomic="true"></div>
+    </main>
+
+    <footer id="footer">
+      <div>Contáctanos</div>
+      <div class="social-icons" aria-label="Redes sociales">
+        <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp" title="WhatsApp">📱</a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" title="Instagram">📸</a>
+        <a href="https://www.facebook.com/" aria-label="Facebook" title="Facebook">📘</a>
+      </div>
+    </footer>
 </body>
 </html>
