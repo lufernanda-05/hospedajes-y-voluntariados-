@@ -22,15 +22,15 @@
       <form id="filtros">
         <label for="filtro-ubicacion">Ubicación:</label>
         <select id="filtro-ubicacion" aria-label="Filtrar por ubicación">
-          <option value=""> ubicaciones</option>
-          <option value="Ciudad A">bogota</option>
-          <option value="Ciudad B">medellin</option>
-          <option value="Ciudad C">cali</option>
+          <option value=""> Ubicaciones</option>
+          <option value="Ciudad A">Bogota</option>
+          <option value="Ciudad B">Medellin</option>
+          <option value="Ciudad C">Cali</option>
         </select>
 
         <label for="filtro-tipo">Tipo:</label>
         <select id="filtro-tipo" aria-label="Filtrar por tipo de hospedaje">
-          <option value="">hospedajes</option>
+          <option value="">Hospedajes</option>
           <option value="Hotel">Hotel</option>
           <option value="Hostal">Hostal</option>
           <option value="Casa">Casa</option>
@@ -42,6 +42,7 @@
         <label for="fecha-final">Fecha final:</label>
         <input type="date" id="fecha-final" name="fecha-final">
       </form>
+      <button id="btn-completar" type="button">Completar</button>
 
       <div id="resultados" aria-live="polite" aria-atomic="true"></div>
     </main>
@@ -54,5 +55,20 @@
         <a href="https://www.facebook.com/" aria-label="Facebook" title="Facebook">📘</a>
       </div>
     </footer>
+    <script>
+  document.getElementById("btn-completar").addEventListener("click", function() {
+    const tipo = document.getElementById("filtro-tipo").value;
+
+    if (tipo === "Hostal") {
+      window.location.href = "hoteles1.html";
+    } else if (tipo === "Hotel") {
+      window.location.href = "hoteles2.html";
+    } else if (tipo === "Casa") {
+      window.location.href = "hoteles3.html";
+    } else {
+      alert("Por favor selecciona un tipo de hospedaje antes de continuar.");
+    }
+  });
+</script>
 </body>
 </html>
