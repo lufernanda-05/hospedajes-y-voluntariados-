@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conseguir Trabajo</title>
+  <!-- 🔗 Conexión al CSS -->
+  <link rel="stylesheet" href="./trabajo.css">
+  <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo">Mi Sitio</div>
+    <nav>
+      <a href="inicio.html">INICIO</a>
+      <a href="inicio.html#footer">CONTACTANOS</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CONSEGUIR TRABAJO</h1>
+
+    <form id="filtros">
+      <label for="filtro-ubicacion">Ubicación:</label>
+      <select id="filtro-ubicacion">
+        <option value="">Selecciona ubicación</option>
+        <option value="Bogotá">Bogotá</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Cali">Cali</option>
+      </select>
+
+      <label for="filtro-area">Área:</label>
+      <select id="filtro-area">
+        <option value="">Selecciona área</option>
+        <option value="Salud">Salud</option>
+        <option value="Educación">Educación</option>
+        <option value="Ambiental">Ambiental</option>
+      </select>
+
+      <label for="fecha-inicio">Fecha inicio:</label>
+      <input type="date" id="fecha-inicio" name="fecha-inicio">
+
+      <label for="fecha-final">Fecha final:</label>
+      <input type="date" id="fecha-final" name="fecha-final">
+    </form>
+
+    <section id="resultados">
+      <h2>RESULTADOS</h2>
+
+      <div class="card">
+        <img src="./fotos/salud.jpg" alt="Área de salud">
+        <div class="info">
+          <h3>Salud</h3>
+          <p>Asistencia en centros de salud.</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./fotos/ambiental.jpg" alt="Área ambiental">
+        <div class="info">
+          <h3>Ambiental</h3>
+          <p>Limpieza en playas, ríos y zonas verdes.</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./fotos/educacion.jpg" alt="Área de educación">
+        <div class="info">
+          <h3>Educación</h3>
+          <p>Enseñanza de arte, idiomas y música.</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div>Contáctanos</div>
+    <div class="social-icons">
+      <a href="https://www.whatsapp.com/?lang=es" title="WhatsApp">📱</a>
+      <a href="https://www.instagram.com/" title="Instagram">📸</a>
+      <a href="https://www.facebook.com/" title="Facebook">📘</a>
+    </div>
+  </footer>
+</body>
+</html>
