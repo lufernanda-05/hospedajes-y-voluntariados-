@@ -6,42 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KINDNEST</title>
     <!--estilos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./inicio.css">
     <!--logo de la pagina= -->
      <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
 </head>
 <body>
-    <header>
-    <div class="logo">KINDNEST PRO</div>
-    <nav>
-      <a href="register.html">REGISTRATE</a>
-      <a href="#footer" id="btn-contacto">CONTACTANOS</a>
+    <header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+    </a>
+
+    <nav class="main-nav" aria-label="Menú principal">
+      <a href="register.html" class="nav-link">REGÍSTRATE</a>
+      <a href="#footer" id="btn-contacto" class="nav-link">CONTACTANOS</a>
+      <a href="login.html" class="nav-link">INICIAR SESIÓN</a>
     </nav>
-  </header>
+  </div>
+</header>
+
     <section class="Informacion">
-    <h1>QUIENES SOMOS</h1>
-    <p>Somos una plataforma dedicada a conectar voluntarios con oportunidades de hospedaje y trabajo en todo el mundo. Nuestra misión es facilitar experiencias enriquecedoras para aquellos que desean contribuir a comunidades necesitadas mientras exploran nuevas culturas; abarcado en el sector humanitario una actividad fundamental para el apoyo acomunidades vulnerables ya que a menudo enfrentan dificultades para encontrar hospedajes adecuados y oportunidades laborales que se ajusten a sus habilidades y disponibilidad por eso proponemos una solucion digital quen facilita el accseso y la gestion para cada uno de ellos.
+    <h1>QUIENES SOMOS <i class="fa-solid fa-globe"></i></h1>
+    <div class="galeria">
+    <img src="./fotos/l.jpg" alt="luisa">
+    <img src="./fotos/s.jpg" alt="santiago ">
+    <img src="./fotos/e.jpg" alt="erica">
+    <img src="./fotos/j.jpg" alt="juan">
+    <img src="./fotos/sa.jpg" alt="sara">
+    <img src="./fotos/n.jpg" alt="nicolas">
+</div>
+    <p>Somos un equipo dedicado a conectar voluntarios con oportunidades de hospedaje y trabajo en todo el mundo. Nuestra misión es facilitar experiencias enriquecedoras para aquellos que desean contribuir a comunidades necesitadas mientras exploran nuevas culturas; abarcado en el sector humanitario una actividad fundamental para el apoyo acomunidades vulnerables ya que a menudo enfrentan dificultades para encontrar hospedajes adecuados y oportunidades laborales que se ajusten a sus habilidades y disponibilidad por eso proponemos una solucion digital quen facilita el accseso y la gestion para cada uno de ellos.
     </p>
     </section>
-    <main>
-    <h1>Bienvenidos a la Plataforma de Voluntariados y hospedajes</h1>
-    <p>
-      Este voluntariado en el sector humanitario es fundamental para apoyar a comunidades vulnerables.
+  <main>
+    <p style="color: #000205;margin-left: 20px; width: calc(100% - 20px);">
       Sabemos que muchas veces es difícil encontrar hospedajes adecuados o empleos temporales que se ajusten a tus habilidades y disponibilidad.
       Por eso, ofrecemos una solución digital que facilita el acceso y la gestión para que puedas contribuir con facilidad.
     </p>
-
     <div class="button-group">
-      <a href="hospedajes.html">BUSCAR HOSPEDAJE</a>
-      <a href="Trabajos.html">BUSCAR OPORTUNIDAD DE TRABAJO</a>
+      <a href="hospedajes.html">BUSCAR <i class="fa-solid fa-location-dot fa-xl" style="color: #000205;"></i> HOSPEDAJE <i class="fa-solid fa-house" style="color: #a9ef7b;"></i> </a>
+      <a href="#">BUSCAR OPORTUNIDAD DE TRABAJO</a>
     </div>
   </main>
+</div>
     <footer id="footer">
-        <div>Contáctanos</div>
+        <div style="text-align: center; color: rgb(116, 203, 238); text-decoration: underline; text-decoration-color: #ef96f7;">CONTACTANOS</div>
+        <p style="color: #f7f8f9;"> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
     <div class="social-icons" aria-label="Redes sociales">
-      <a href="#" aria-label="WhatsApp">📱</a>
-      <a href="#" aria-label="Instagram">📸</a>
-      <a href="#" aria-label="Facebook">📘</a>
+      <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
+      <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
+      <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&dsh=S-433904788%3A1762739809103135&ec=asw-gmail-globalnav-signin&flowEntry=AccountChooser&flowName=GlifWebSignIn&service=mail" aria-label="EMAIL"><i class="fa-regular fa-envelope" style="color: #bc2929;"></i></a>
     </div>
         <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
     </footer>
