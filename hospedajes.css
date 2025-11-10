@@ -1,8 +1,10 @@
+/* Reset general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ededed;
@@ -14,6 +16,8 @@ body {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+
+/* Encabezado */
 header {
   background-color: #004080;
   color: white;
@@ -21,21 +25,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
 }
+
 header .logo {
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 1px;
   flex: 1 1 auto;
 }
+
+/* Navegación */
 nav {
   flex: 1 1 auto;
   text-align: right;
 }
+
 nav a {
-  color: rgb(10, 2, 2);
+  color: #ffffff;
   text-decoration: none;
   margin-left: 2rem;
   font-weight: 600;
@@ -47,9 +55,12 @@ nav a {
   align-items: center;
   gap: 6px;
 }
+
 nav a:hover {
   color: #a0c4ff;
 }
+
+/* Contenido principal */
 main {
   flex: 1;
   max-width: 1000px;
@@ -57,12 +68,14 @@ main {
   padding: 0 2rem;
   width: 100%;
 }
+
 main h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   color: #004080;
   text-align: center;
 }
+
 main p {
   font-size: 1.25rem;
   margin-bottom: 3rem;
@@ -72,12 +85,15 @@ main p {
   margin-right: auto;
   line-height: 1.5;
 }
+
+/* Pie de página */
 footer {
   background-color: #222f44;
   color: white;
   padding: 1.5rem 3rem;
   text-align: center;
 }
+
 footer .social-icons a {
   display: inline-block;
   margin: 0 1rem;
@@ -86,104 +102,12 @@ footer .social-icons a {
   transition: color 0.3s ease;
   text-decoration: none;
 }
+
 footer .social-icons a:hover {
-  color: #7ec8e3;
-}
-#filtros {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-#filtros label {
-  align-self: center;
-  font-weight: bold;
-}
-#filtros select {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  min-width: 180px;
-}
-#resultados {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-.hospedaje-card {
-  background: #f9fafb;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.hospedaje-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-.hospedaje-info {
-  padding: 1rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.hospedaje-info h3 {
-  margin-bottom: 0.5rem;
-  color: #004080;
-}
-.hospedaje-info p {
-  font-size: 0.9rem;
-  flex-grow: 1;
-  margin-bottom: 1rem;
-}
-.hospedaje-info button {
-  background-color: #0073e6;
-  color: rgb(39, 190, 254);
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-.hospedaje-info button:hover {
-  background-color: #005bb5;
-}
-/* Responsive */
-@media (max-width: 900px) {
-  main h1 {
-    font-size: 2.2rem;
-  }
-  main p {
-    font-size: 1.1rem;
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-  nav {
-    text-align: center;
-    margin-top: 0.8rem;
-    flex-basis: 100%;
-  }
-  nav a {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 0.95rem;
-  }
-  footer {
-    padding: 1rem 1.5rem;
-    font-size: 0.9rem;
-  }
-  footer .social-icons a {
-    font-size: 1.6rem;
-    margin: 0 0.6rem;
-  }
+  color: #28a0f0;
 }
 
+/* Filtros */
 #filtros {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -212,6 +136,65 @@ footer .social-icons a:hover {
 #filtros select:hover {
   border-color: #0073e6;
 }
+
+/* Resultados */
+#resultados {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjetas de hospedaje */
+.hospedaje-card {
+  background: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hospedaje-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.hospedaje-info {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hospedaje-info h3 {
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+.hospedaje-info p {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.hospedaje-info button {
+  background-color: #0073e6;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hospedaje-info button:hover {
+  background-color: #005bb5;
+}
+
+/* Botón principal */
 #btn-completar {
   display: block;
   margin: 1rem auto;
@@ -230,110 +213,128 @@ footer .social-icons a:hover {
   background-color: #005bb5;
   transform: scale(1.05);
 }
- /* Estilos del encabezado */
-    .site-header {
-      background-color: #004080;
-      padding: 0.6rem 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      width: 100%;
-    }
 
-    .header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+/* Encabezado del sitio */
+.site-header {
+  background-color: #004080;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
 
-    .logo-link {
-      display: inline-block;
-      border-radius: 50%;
-      padding: 4px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-      box-shadow: 0 0 0 3px rgba(0, 106, 204, 0.15), 0 2px 6px rgba(0,0,0,0.12);
-    }
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .logo {
-      width: 56px;
-      height: 56px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #0073e6;
-      display: block;
-    }
+.logo-link {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  box-shadow: 0 0 0 3px rgba(0, 106, 204, 0.15), 0 2px 6px rgba(0, 0, 0, 0.12);
+}
 
-    .main-nav {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
+.logo {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0073e6;
+  display: block;
+}
 
-    .nav-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 0.45rem 0.7rem;
-      border-radius: 6px;
-      transition: background-color 0.18s ease, transform 0.12s ease;
-      white-space: nowrap;
-    }
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 
-    .nav-link:hover,
-    .nav-link:focus {
-      background-color: rgba(255,255,255,0.07);
-      transform: translateY(-2px);
-      outline: none;
-    }
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+  transition: background-color 0.18s ease, transform 0.12s ease;
+  white-space: nowrap;
+}
 
-    #btn-contacto {
-      background: transparent;
-      border: 2px solid rgba(255,255,255,0.12);
-      padding: 0.35rem 0.7rem;
-    }
+.nav-link:hover,
+.nav-link:focus {
+  background-color: rgba(255, 255, 255, 0.07);
+  transform: translateY(-2px);
+  outline: none;
+}
 
-    #btn-contacto:hover {
-      background: rgba(255,255,255,0.08);
-    }
-/* Estilos del pie de página */
-    footer {
-      background-color: #222f44;
-      color: white;
-      padding: 1.5rem 3rem;
-      text-align: center;
-    }
+#btn-contacto {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  padding: 0.35rem 0.7rem;
+}
 
-    footer .social-icons a {
-      display: inline-block;
-      margin: 0 1rem;
-      font-size: 2rem;
-      color: white;
-      transition: color 0.3s ease;
-      text-decoration: none;
-    }
+#btn-contacto:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
 
-    footer .social-icons a:hover {
-      color: #28a0f0;
-    }
+/* Responsive */
+@media (max-width: 900px) {
+  main h1 {
+    font-size: 2.2rem;
+  }
 
-/* Responsive: ajustes para pantallas pequeñas */
+  main p {
+    font-size: 1.1rem;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 0.8rem;
+    flex-basis: 100%;
+  }
+
+  nav a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.6rem;
+    margin: 0 0.6rem;
+  }
+}
+
 @media (max-width: 720px) {
   .header-inner {
     padding: 0 0.6rem;
   }
+
   .logo {
     width: 48px;
     height: 48px;
   }
+
   .main-nav {
     gap: 0.5rem;
-    /* Opcional: cambiar a menú hamburguesa aquí si quieres */
   }
+
   .nav-link {
     font-size: 0.95rem;
-    padding: 0.35rem 0.5rem;
-  }
+    padding: 0.35rem 0.5rem;
+  }
 }
+
