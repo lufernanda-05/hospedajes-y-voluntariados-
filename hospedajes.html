@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hospedajes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./hospedajes.css">
     <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
 </head>
@@ -14,7 +15,18 @@
         <a href="inicio.html">INICIO</a>
         <a href="inicio.html#footer" id="contact-link">CONTACTANOS</a>
       </nav>
-    </header>
+ <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Menú principal">
+        <a href="register.html" class="nav-link">REGÍSTRATE</a>
+        <a href="inicio.html" class="nav-link">INICIÓN</a>
+      </nav>
+    </div>
+  </header>
 
     <main>
       <h1>HOSPEDAJES</h1>
@@ -48,13 +60,15 @@
     </main>
 
     <footer id="footer">
-      <div>Contáctanos</div>
-      <div class="social-icons" aria-label="Redes sociales">
-        <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp" title="WhatsApp">📱</a>
-        <a href="https://www.instagram.com/" aria-label="Instagram" title="Instagram">📸</a>
-        <a href="https://www.facebook.com/" aria-label="Facebook" title="Facebook">📘</a>
-      </div>
-    </footer>
+    <div style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
+    <p> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+    <div class="social-icons" aria-label="Redes sociales">
+      <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
+      <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
+    </div>
+    <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
+  </footer>
     <script>
   document.getElementById("btn-completar").addEventListener("click", function() {
     const tipo = document.getElementById("filtro-tipo").value;
