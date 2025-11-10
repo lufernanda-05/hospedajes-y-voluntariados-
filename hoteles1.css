@@ -1,0 +1,226 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #ededed;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  /* ---- HEADER ---- */
+  .site-header {
+    background-color: #004080;
+    padding: 0.6rem 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-link {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    box-shadow: 0 0 0 3px rgba(0,106,204,0.15), 0 2px 6px rgba(0,0,0,0.12);
+  }
+  
+  .logo {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0073e6;
+    display: block;
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.45rem 0.7rem;
+    border-radius: 6px;
+    transition: 0.18s ease;
+    white-space: nowrap;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+  }
+  
+  /* ---- CONTENT ---- */
+  .container {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+    width: 100%;
+  }
+  
+  /* Titles */
+  .title-row h1 {
+    font-size: 2.4rem;
+    color: #004080;
+    margin-bottom: 6px;
+    font-weight: 800;
+  }
+  .subtitle {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .rating a {
+    color: #0073e6;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* ---- Gallery ---- */
+  .gallery {
+    margin-top: 2rem;
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .gallery a {
+    color: white;
+    background: #0073e6;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .gallery a:hover {
+    background: #005bb5;
+  }
+  
+  /* Small icons row */
+  .gallery1 {
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .gallery1 img {
+    width: 110px;
+    height: 30px;
+    object-fit: cover;
+  }
+  .gallery1 a {
+    text-decoration: none;
+    background: #0073e6;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  /* ---- Info text ---- */
+  .info-section {
+    margin-top: 2rem;
+    background: #fff;
+    padding: 1.8rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .info-section h2, .info-section h3 {
+    color: #004080;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  /* ---- Calendar ---- */
+  .calendar-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .calendar {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .calendar h4 {
+    margin-bottom: 0.6rem;
+    color: #004080;
+    font-weight: bold;
+  }
+  
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .calendar td {
+    padding: 5px;
+    border: 1px solid #eee;
+  }
+  
+  /* ---- Footer ---- */
+  footer {
+    background-color: #222f44;
+    color: white;
+    padding: 1.8rem;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  footer .social-icons a {
+    font-size: 2rem;
+    margin: 0 .8rem;
+    color: white;
+    transition: .3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #7ec8e3;
+  }
+  
+  /* ---- Responsive ---- */
+  @media (max-width: 720px) {
+    .logo { width: 48px; height: 48px; }
+    .container { padding: 0 1rem; }
+    .gallery img { max-height: 220px; }
+    .title-row h1 { font-size: 1.9rem; }
+  }  

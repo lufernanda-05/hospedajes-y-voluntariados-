@@ -2,197 +2,67 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Galeria - Hostal - La mano de Dios</title>
-    <style>
-         /* Estilos del pie de página */
-        footer {
-        background-color: #222f44;
-        color: white;
-        padding: 1.5rem 3rem;
-        text-align: center;
-        }
+    <title>Galería - Hostal - La mano de Dios</title>
+    <link rel="stylesheet" href="galeria1.css">
+    <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
 
-        footer .social-icons a {
-        display: inline-block;
-        margin: 0 1rem;
-        font-size: 2rem;
-        color: white;
-        transition: color 0.3s ease;
-        text-decoration: none;
-        }
-
-        footer .social-icons a:hover {
-        color: #28a0f0;
-        }
-        @media (max-width: 720px) {
-        .header-inner {
-            padding: 0 0.6rem;
-        }
-        .logo {
-        width: 48px;
-        height: 48px;
-        }
-        .main-nav {
-        gap: 0.5rem;
-        }
-        .nav-link {
-        font-size: 0.95rem;
-        padding: 0.35rem 0.5rem;
-        }
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            border-bottom: 1px solid #ccc;
-        }
-        header nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-        }
-        .title-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            color: #555;
-            margin-bottom: 10px;
-        }
-        .rating {
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .gallery {
-            display: flex;
-            justify-content: center; /* Centra horizontalmente */
-            gap: 10px;
-            flex-wrap: wrap; /* Para que se ajusten si hay muchas imágenes */
-        }
-        .gallery img {
-            width: 800px;
-            height: 7000px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .info-section h2 {
-            margin-top: 20px;
-            color: #6a1b9a;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .calendar-container {
-            text-align: center; /* Centra el contenido */
-            margin-top: 30px;
-        }
-        .calendar {
-            display: inline-block; /* Para que se centre */
-            border: 1px solid #ccc;
-            padding: 15px;
-            border-radius: 8px;
-            width: 250px;
-        }
-        .calendar h4 {
-            margin-bottom: 10px;
-        }
-        .calendar table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        .calendar td {
-            padding: 5px;
-            border: 1px solid #eee;
-        }
-        .reserve-btn {
-            display: block;
-            margin-top: 15px;
-            padding: 10px;
-            background: #6a1b9a;
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .map {
-            margin-top: 20px;
-            height: 150px;
-            background-color: #ddd;
-            text-align: center;
-            line-height: 150px;
-            color: #555;
-            border-radius: 8px;
-        }
-    </style>
+    <!-- Font Awesome para redes sociales -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     <header class="site-header">
+
+<!-- Header principal del sitio -->
+<header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
-      </a>
-
-      <nav class="main-nav" aria-label="Menú principal">
-        <a href="register.html" class="nav-link">REGÍSTRATE</a>
-        <a href="inicio.html" class="nav-link">INICIÓN</a>
-      </nav>
-    </div>
-  </header>
-    <header>
-        <div>&larr; <a href="hospedajes.html" id="contact-link">hospedajes</a></div>
-        
-        <nav>
-            <a href="inicio.html">INICIO</a>
-            <a href="inicio.html#footer" id="contact-link">CONTACTANOS</a>
+        <a href="index.html" class="logo-link">
+            <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+        </a>
+        <nav class="main-nav">
+            <a href="register.html" class="nav-link">REGÍSTRATE</a>
+            <a href="inicio.html" class="nav-link">INICIO</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <div class="container">
-        <div class="title-row">
-            <div>
-                <h1>Hostal - La mano de Dios</h1>
-                <p class="subtitle">Conecta, explora y comparte tu viaje. Más que una cama, somos tu comunidad.h</p>
-            </div>
-            <div class="rating"><a href="reseñas1.html" id="contact-link">⭐ 4.91 - 4 Reseñas</a></div>
+<!-- Header secundario navegación -->
+<header class="sub-header">
+    <div><a href="hospedajes.html" class="back-link">&larr; Hospedajes</a></div>
+
+    <nav>
+        <a href="inicio.html">INICIO</a>
+        <a href="inicio.html#footer">CONTACTANOS</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="title-row">
+        <div>
+            <h1>Hostal - La mano de Dios</h1>
+            <p class="subtitle">Conecta, explora y comparte tu viaje. Más que una cama, somos tu comunidad.</p>
         </div>
-
-        <div class="gallery">
-            <img src="001.png" alt="Hostal La mano de Dios exterior">
-
+        <div class="rating">
+            <a href="resenas1.html">⭐ 4.91 - 4 Reseñas</a>
         </div>
+    </div>
 
-        
-        <footer id="footer">
-        <div style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
-        <p> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
-        <div class="social-icons" aria-label="Redes sociales">
-            <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
-            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
-            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
-        </div>
-        <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
-    </footer>
+    <!-- Galería -->
+    <div class="gallery">
+        <img src="001.png" alt="Hostal La mano de Dios exterior">
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <h3>Contáctanos</h3>
+    <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+
+    <div class="social-icons">
+        <a href="https://www.whatsapp.com/?lang=es"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>

@@ -2,269 +2,114 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Hostal - La mano de Dios</title>
-    <style>
-         /* Estilos del pie de página */
-        footer {
-        background-color: #222f44;
-        color: white;
-        padding: 1.5rem 3rem;
-        text-align: center;
-        }
-
-        footer .social-icons a {
-        display: inline-block;
-        margin: 0 1rem;
-        font-size: 2rem;
-        color: white;
-        transition: color 0.3s ease;
-        text-decoration: none;
-        }
-
-        footer .social-icons a:hover {
-        color: #28a0f0;
-        }
-        @media (max-width: 720px) {
-        .header-inner {
-            padding: 0 0.6rem;
-        }
-        .logo {
-        width: 48px;
-        height: 48px;
-        }
-        .main-nav {
-        gap: 0.5rem;
-        }
-        .nav-link {
-        font-size: 0.95rem;
-        padding: 0.35rem 0.5rem;
-        }
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            border-bottom: 1px solid #ccc;
-        }
-        header nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-        }
-        .title-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            color: #555;
-            margin-bottom: 10px;
-        }
-        .rating {
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .gallery {
-            display: flex;
-            justify-content: center; /* Centra horizontalmente */
-            gap: 10px;
-            flex-wrap: wrap; /* Para que se ajusten si hay muchas imágenes */
-        }
-        .gallery1 {
-            display: flex;
-            justify-content: center; /* Centra horizontalmente */
-            gap: 10px;
-            flex-wrap: wrap; /* Para que se ajusten si hay muchas imágenes */
-        }
-        .gallery1 img {
-            width: 105px;
-            height: 30px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .gallery img {
-            width: 650px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .info-section h2 {
-            margin-top: 20px;
-            color: #6a1b9a;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .calendar-container {
-            text-align: center; /* Centra el contenido */
-            margin-top: 30px;
-        }
-        .calendar {
-            display: inline-block; /* Para que se centre */
-            border: 1px solid #ccc;
-            padding: 15px;
-            border-radius: 8px;
-            width: 250px;
-        }
-        .calendar h4 {
-            margin-bottom: 10px;
-        }
-        .calendar table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        .calendar td {
-            padding: 5px;
-            border: 1px solid #eee;
-        }
-        .reserve-btn {
-            display: block;
-            margin-top: 15px;
-            padding: 10px;
-            background: #6a1b9a;
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .map {
-            margin-top: 20px;
-            height: 150px;
-            background-color: #ddd;
-            text-align: center;
-            line-height: 150px;
-            color: #555;
-            border-radius: 8px;
-        }
-    </style>
+    <title>Hostal - La Mano de Dios</title>
+    <link rel="stylesheet" href="hoteles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-     <header class="site-header">
+
+<header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
-      </a>
+        <a href="inicio.html" class="logo-link">
+            <img src="./fotos/logo.jpg" alt="LOGO" class="logo">
+        </a>
 
-      <nav class="main-nav" aria-label="Menú principal">
-        <a href="register.html" class="nav-link">REGÍSTRATE</a>
-        <a href="inicio.html" class="nav-link">INICIÓN</a>
-      </nav>
-    </div>
-  </header>
-    <header>
-        <div>&larr; <a href="hospedajes.html" id="contact-link">hospedajes</a></div>
-        
-        <nav>
-            <a href="inicio.html">INICIO</a>
-            <a href="inicio.html#footer" id="contact-link">CONTACTANOS</a>
+        <nav class="main-nav">
+            <a href="register.html" class="nav-link">REGÍSTRATE</a>
+            <a href="inicio.html" class="nav-link">INICIO</a>
+            <a href="inicio.html#footer" class="nav-link">CONTÁCTANOS</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <div class="container">
-        <div class="title-row">
-            <div>
-                <h1>Hostal - La mano de Dios</h1>
-                <p class="subtitle">Conecta, explora y comparte tu viaje. Más que una cama, somos tu comunidad.</p>
-            </div>
-            <div class="rating"><a href="reseñas1.html" id="contact-link">⭐ 4.91 - 4 Reseñas</a></div>
+<div class="container">
+    <div class="title-row">
+        <div>
+            <h1>Hostal - La Mano de Dios</h1>
+            <p class="subtitle">Conecta, explora y comparte tu viaje. Más que una cama, somos tu comunidad.</p>
         </div>
-
-        <div class="gallery">
-            <img src="00.png" alt="Hostal La mano de Dios exterior">
-            <a href="galeria1.html">Galeria</a>
+        <div class="rating">
+            <a href="resenas1.html">⭐ 4.91 - 4 Reseñas</a>
         </div>
+    </div>
 
-        <div class="info-section">
-            <h2>Alojamiento entero: villa en Fusagasugá, Colombia</h2>
-            <p>20 huéspedes - 8 habitaciones - 16 camas - 4 baños</p>
+    <div class="gallery">
+        <img src="00.png" alt="Hostal La Mano de Dios">
+        <a href="galeria1.html">Galería</a>
+    </div>
 
-            <h3>Descripción general:</h3>
-            <p>El Hostal La Mano de Dios es mucho más que un lugar para descansar: es un espacio de encuentro, colaboración y transformación...</p>
+    <div class="info-section">
+        <h2>Alojamiento entero: villa en Fusagasugá, Colombia</h2>
+        <p>20 huéspedes - 8 habitaciones - 16 camas - 4 baños</p>
 
-            <h3>Servicios disponibles:</h3>
-            <ul>
-                <li>Habitaciones compartidas y privadas</li>
-                <li>Cocina comunitaria</li>
-                <li>Espacios de descanso y lectura</li>
-                <li>Jardín ecológico</li>
-                <li>Wi-Fi gratuito</li>
-                <li>Actividades culturales y comunitarias</li>
-            </ul>
+        <h3>Descripción general:</h3>
+        <p>El Hostal La Mano de Dios es mucho más que un lugar para descansar: es un espacio de encuentro, colaboración y transformación donde viajeros y voluntarios crean experiencias únicas.</p>
 
-            <h3>Requisitos:</h3>
-            <ul>
-                <li>Ser mayor de edad</li>
-                <li>Compromiso mínimo de 2 semanas</li>
-                <li>Disposición para colaborar y aprender</li>
-            </ul>
+        <h3>Servicios disponibles:</h3>
+        <ul>
+            <li>Habitaciones compartidas y privadas</li>
+            <li>Cocina comunitaria</li>
+            <li>Espacios de descanso y lectura</li>
+            <li>Jardín ecológico</li>
+            <li>Wi-Fi gratuito</li>
+            <li>Actividades culturales y comunitarias</li>
+        </ul>
 
-            <h3>Oportunidades de voluntariado:</h3>
-            <ul>
-                <li>Mantenimiento y limpieza del hostal</li>
-                <li>Organización de eventos culturales</li>
-                <li>Apoyo en huertas urbanas y proyectos ecológicos</li>
-                <li>Enseñanza de idiomas o habilidades</li>
-                <li>Gestión de redes sociales y promoción</li>
-            </ul>
+        <h3>Requisitos:</h3>
+        <ul>
+            <li>Ser mayor de edad</li>
+            <li>Compromiso mínimo de 2 semanas</li>
+            <li>Disposición para colaborar y aprender</li>
+        </ul>
+
+        <h3>Oportunidades de voluntariado:</h3>
+        <ul>
+            <li>Mantenimiento y limpieza del hostal</li>
+            <li>Organización de eventos culturales</li>
+            <li>Apoyo en huertas urbanas y proyectos ecológicos</li>
+            <li>Enseñanza de idiomas o habilidades</li>
+            <li>Gestión de redes sociales y promoción</li>
+        </ul>
+    </div>
+
+    <div class="calendar-container">
+        <div class="calendar">
+            <h4>Nov 2025</h4>
+            <table>
+                <tr><td>Lu</td><td>Ma</td><td>Mi</td><td>Ju</td><td>Vi</td><td>Sa</td><td>Do</td></tr>
+                <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+                <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+                <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
+                <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+                <tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr>
+            </table>
         </div>
+    </div>
 
-        <div class="calendar-container">
-            <div class="calendar">
-                <h4>Nov 2025</h4>
-                <table>
-                    <tr><td>Lu</td><td>Ma</td><td>Mi</td><td>Ju</td><td>Vi</td><td>Sa</td><td>Do</td></tr>
-                    <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-                    <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
-                    <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
-                    <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
-                    <tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr>
-                </table>
-            </div>
-        </div>
-        <div class="gallery1">
-            <img src="re.png" alt="imagen">
-            <li><a href="FormularioHospedaje.html" id="contact-link">reservar</a></li>
-        </div>
-        <div class="gallery">
-            <img src="20.png" alt="imagen">
-            <li><a href="https://maps.app.goo.gl/aGftutQoafjTYoEt8" target="_blank">GoogleMaps</a></li>
-        </div>
+    <div class="gallery1">
+        <img src="re.png" alt="">
+        <a href="FormularioHospedaje.html">Reservar</a>
+    </div>
 
-        
-        <footer id="footer">
-        <div style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
-        <p> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
-        <div class="social-icons" aria-label="Redes sociales">
-            <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
-            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
-            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
-        </div>
-        <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
-    </footer>
+    <div class="gallery">
+        <img src="20.png" alt="">
+        <a href="https://maps.app.goo.gl/aGftutQoafjTYoEt8" target="_blank">Google Maps</a>
+    </div>
+</div>
+
+<footer id="footer">
+    <h3>Contáctanos</h3>
+    <p>Si tienes alguna pregunta o necesitas más información, contáctanos.</p>
+
+    <div class="social-icons">
+        <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+    <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
-
-
-
-

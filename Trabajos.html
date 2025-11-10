@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conseguir Trabajo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="./Trabajos.css">
+  <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+          <a href="inicio.html" class="logo-link">
+            <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+          </a>
+    
+          <nav class="main-nav" aria-label="Menú principal">
+            <a href="register.html" class="nav-link">CONTACTANOS</a>
+            <a href="inicio.html" class="nav-link">INICIO</a>
+          </nav>
+        </div>
+    </header>
+
+  <main>
+    <h1>CONSEGUIR TRABAJO</h1>
+
+    <form id="filtros">
+      <label for="filtro-ubicacion">Ubicación:</label>
+      <select id="filtro-ubicacion">
+        <option value="">Selecciona ubicación</option>
+        <option value="Bogotá">Bogotá</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Cali">Cali</option>
+      </select>
+
+      <label for="filtro-area">Área:</label>
+      <select id="filtro-area">
+        <option value="">Selecciona área</option>
+        <option value="Salud">Salud</option>
+        <option value="Educación">Educación</option>
+        <option value="Ambiental">Ambiental</option>
+      </select>
+
+      <label for="fecha-inicio">Fecha inicio:</label>
+      <input type="date" id="fecha-inicio" name="fecha-inicio">
+
+      <label for="fecha-final">Fecha final:</label>
+      <input type="date" id="fecha-final" name="fecha-final">
+    </form>
+
+    <section id="resultados">
+      <h2>RESULTADOS</h2>
+
+      <div class="card">
+        <img src="./fotos/Salud.PNG" alt="Área de salud">
+        <div class="info">
+          <h3>Salud</h3>
+          <p>Asistencia en centros de salud.</p>
+          <button>Ver más</button> <a href="FormularioOportunidadesLaborales.html">Salud</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./fotos/Ambiental.PNG" alt="Área ambiental">
+        <div class="info">
+          <h3>Ambiental</h3>
+          <p>Limpieza en playas, ríos y zonas verdes.</p>
+          <button>Ver más</button><a href="FormularioOportunidadesLaborales.html">Ambiental</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./fotos/Educacion.PNG" alt="Área de educación">
+        <div class="info">
+          <h3>Educación</h3>
+          <p>Enseñanza de arte, idiomas y música.</p>
+          <button>Ver más</button><a href="FormularioOportunidadesLaborales.html">Educacion</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer id="footer">
+    <div style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
+    <p> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+    <div class="social-icons" aria-label="Redes sociales">
+      <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
+      <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
+    </div>
+    <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
