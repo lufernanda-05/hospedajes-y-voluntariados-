@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Hotel - Luz del Camino</title>
+    <title>Hostal - La mano de Dios</title>
     <style>
-                 /* Estilos del pie de página */
+         /* Estilos del pie de página */
         footer {
         background-color: #222f44;
         color: white;
@@ -40,6 +40,7 @@
         padding: 0.35rem 0.5rem;
         }
         }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -81,27 +82,28 @@
             font-weight: bold;
             color: #333;
         }
+        
         .gallery {
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Centra horizontalmente */
             gap: 10px;
-            flex-wrap: wrap;
-        }
-        .gallery img {
-            width: 650px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
+            flex-wrap: wrap; /* Para que se ajusten si hay muchas imágenes */
         }
         .gallery1 {
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Centra horizontalmente */
             gap: 10px;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Para que se ajusten si hay muchas imágenes */
         }
         .gallery1 img {
             width: 105px;
             height: 30px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .gallery img {
+            width: 650px;
+            height: 200px;
             object-fit: cover;
             border-radius: 8px;
         }
@@ -113,11 +115,11 @@
             padding-left: 20px;
         }
         .calendar-container {
-            text-align: center;
+            text-align: center; /* Centra el contenido */
             margin-top: 30px;
         }
         .calendar {
-            display: inline-block;
+            display: inline-block; /* Para que se centre */
             border: 1px solid #ccc;
             padding: 15px;
             border-radius: 8px;
@@ -158,9 +160,21 @@
     </style>
 </head>
 <body>
+     <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Menú principal">
+        <a href="register.html" class="nav-link">REGÍSTRATE</a>
+        <a href="inicio.html" class="nav-link">INICIÓN</a>
+      </nav>
+    </div>
+  </header>
     <header>
-        <div>&larr; Previous</div>
-        <a href="hospedajes.html" id="contact-link">reservar</a>
+        <div>&larr; <a href="hospedajes.html" id="contact-link">hospedajes</a></div>
+        
         <nav>
             <a href="inicio.html">INICIO</a>
             <a href="inicio.html#footer" id="contact-link">CONTACTANOS</a>
@@ -171,10 +185,9 @@
         <div class="title-row">
             <div>
                 <h1>Hotel - Luz del Camino</h1>
-                <p class="subtitle">Conecta, explora y comparte tu viaje. Más que una cama, somos tu comunidad.</p>
+                <p class="subtitle">Conecta, explora y comparte tu viaje. Más que una cama, somos tu comunidad.h</p>
             </div>
-            <div class="rating">⭐ 4.7 - 3 Reseñas</div>
-            <a href="reseñas2.html" id="contact-link">Reseñas</a>
+            <div class="rating"><a href="reseñas2.html" id="contact-link">⭐ 4.91 - 4 Reseñas</a></div>
         </div>
 
         <div class="gallery">
@@ -182,41 +195,36 @@
         </div>
 
         <div class="info-section">
-            <h2>Alojamiento entero: alojamiento en Gachetá, Colombia</h2>
-            <p>35 huéspedes - 15 habitaciones - 25 camas - 4 baños</p>
+            <h2>Alojamiento entero: alojamiento en Gacheta, Colombia</h2>
+            <p> 35 huéspedes - 15 habitaciones - 25 camas - 4 baños</p>
 
             <h3>Descripción general:</h3>
-            <p>El Hotel Luz del Camino es un espacio diseñado para brindar comodidad, descanso y propósito. Además de ofrecer un lugar para dormir, este hotel busca la conexión con la comunidad y el desarrollo social y ambiental mediante actividades culturales y oportunidades de voluntariado que permiten a los huéspedes contribuir activamente.</p>
+            <p>El Hotel Luz del Camino es un espacio diseñado para brindar comodidad, descanso y propósito. Además de ofrecer servicios de alta calidad para viajeros, el hotel se ha comprometido con el desarrollo social y ambiental de su entorno, integrando programas de voluntariado que permiten a los huéspedes contribuir activamente mientras disfrutan de su estadía.</p>
 
             <h3>Servicios disponibles:</h3>
             <ul>
-                <li>Habitaciones privadas con baño</li>
-                <li>Acceso a zonas verdes</li>
-                <li>Espacios para trabajo remoto</li>
+                <li>Habitaciones compartidas y privadas</li>
+                <li>Cocina comunitaria</li>
+                <li>Espacios de descanso y lectura</li>
+                <li>Jardín ecológico</li>
                 <li>Wi-Fi gratuito</li>
-                <li>Actividades culturales y recreativas</li>
+                <li>Actividades culturales y comunitarias</li>
             </ul>
 
             <h3>Requisitos:</h3>
             <ul>
                 <li>Ser mayor de edad</li>
                 <li>Compromiso mínimo de 2 semanas</li>
-                <li>Interés en desarrollo comunitario y cultural</li>
-            </ul>
-
-            <h3>Valores del hotel:</h3>
-            <ul>
-                <li>Hospitalidad con propósito</li>
-                <li>Respeto por la comunidad</li>
-                <li>Acciones sostenibles</li>
+                <li>Disposición para colaborar y aprender</li>
             </ul>
 
             <h3>Oportunidades de voluntariado:</h3>
             <ul>
-                <li>Apoyo en actividades culturales y artísticas</li>
-                <li>Mantenimiento de áreas verdes</li>
-                <li>Enseñanza de idiomas</li>
-                <li>Gestión de redes sociales y contenido digital</li>
+                <li>Mantenimiento y limpieza del hostal</li>
+                <li>Organización de eventos culturales</li>
+                <li>Apoyo en huertas urbanas y proyectos ecológicos</li>
+                <li>Enseñanza de idiomas o habilidades</li>
+                <li>Gestión de redes sociales y promoción</li>
             </ul>
         </div>
 
@@ -233,19 +241,17 @@
                 </table>
             </div>
         </div>
-
         <div class="gallery1">
             <img src="re.png" alt="imagen">
-            <li>hospedajes.htmlReservar</a></li>
             <li><a href="hospedajes.html" id="contact-link">reservar</a></li>
         </div>
-
         <div class="gallery">
             <img src="10.png" alt="imagen">
-            <li><a href="https://www.google.com/maps/place/El+tesoro+de+pauso/@4.8039964,-73.6201335,13z/data=!4m9!3m8!1s0x8e3ffbd893583155:0xb04c0fb15d4b68fc!5m2!4m1!1i2!8m2!3d4.7917389!4d-73.6234203!16s%2Fg%2F11sk7z93c8?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D">  </div>
-    </div>
+            <li><a href="https://www.google.com/maps/place/El+tesoro+de+pauso/@4.8039964,-73.6201335,13z/data=!4m9!3m8!1s0x8e3ffbd893583155:0xb04c0fb15d4b68fc!5m2!4m1!1i2!8m2!3d4.7917389!4d-73.6234203!16s%2Fg%2F11sk7z93c8?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D" target="_blank">GoogleMaps</a></li>
+        </div>
 
-            <footer id="footer">
+        
+        <footer id="footer">
         <div style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
         <p> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
         <div class="social-icons" aria-label="Redes sociales">
@@ -257,5 +263,6 @@
     </footer>
 </body>
 </html>
+
 
 
