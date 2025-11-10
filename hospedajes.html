@@ -25,22 +25,13 @@
     </div>
   </header>
 
-  <!-- MAIN -->
   <main>
     <h1>HOSPEDAJES</h1>
-
     <form id="filtros">
       <label for="filtro-ubicacion">Ubicación:</label>
       <select id="filtro-ubicacion" aria-label="Filtrar por ubicación">
         <option value="">Ubicaciones</option>
         <option value="Ciudad A">Bogotá</option>
-        <option value="Ciudad B">Medellín</option>
-        <option value="Ciudad C">Cali</option>
-      </select>
-
-      <label for="filtro-tipo">Tipo:</label>
-      <select id="filtro-tipo" aria-label="Filtrar por tipo de hospedaje">
-        <option value="">Hospedajes</option>
         <option value="Hotel">Hotel</option>
         <option value="Hostal">Hostal</option>
         <option value="Casa">Casa</option>
@@ -58,22 +49,20 @@
     <div id="resultados" aria-live="polite" aria-atomic="true"></div>
   </main>
 
-  <!-- FOOTER -->
   <footer id="footer">
-    <h2 style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline;">Contáctanos</h2>
-    <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+    <div>Contáctanos</div>
     <div class="social-icons" aria-label="Redes sociales">
       <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
       <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
       <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
+      <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
     </div>
-    <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
   </footer>
-
   <script>
+    // javascript para manejar el botón  
     document.getElementById("btn-completar").addEventListener("click", function() {
-      const tipo = document.getElementById("filtro-tipo").value;
-
+      // Asumiendo que el filtro de tipo es el select de ubicación
+      const tipo = document.getElementById("filtro-ubicacion").value;
       if (tipo === "Hostal") {
         window.location.href = "hoteles1.html";
       } else if (tipo === "Hotel") {
@@ -87,4 +76,3 @@
   </script>
 </body>
 </html>
-
