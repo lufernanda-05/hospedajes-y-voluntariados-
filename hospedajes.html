@@ -1,88 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hospedajes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./hospedajes.css">
-    <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospedajes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./hospedajes.css">
+  <link rel="shortcut icon" href="./fotos/logo.jpg" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-      <div class="logo">Mi Sitio</div>
-      <nav>
-        <a href="inicio.html">INICIO</a>
-        <a href="inicio.html#footer" id="contact-link">CONTACTANOS</a>
-      </nav>
- <header class="site-header">
+  <!-- HEADER -->
+  <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo-link">
-        <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+        <img src="./fotos/logo.jpg" alt="Logo del sitio" class="logo">
       </a>
 
       <nav class="main-nav" aria-label="Menú principal">
         <a href="register.html" class="nav-link">REGÍSTRATE</a>
-        <a href="inicio.html" class="nav-link">INICIÓN</a>
+        <a href="inicio.html" class="nav-link">INICIO</a>
+        <a href="#footer" class="nav-link">CONTACTANOS</a>
       </nav>
     </div>
-  </header>
+  </header>
 
-    <main>
-      <h1>HOSPEDAJES</h1>
+  <!-- MAIN -->
+  <main>
+    <h1>HOSPEDAJES</h1>
 
-      <form id="filtros">
-        <label for="filtro-ubicacion">Ubicación:</label>
-        <select id="filtro-ubicacion" aria-label="Filtrar por ubicación">
-          <option value=""> Ubicaciones</option>
-          <option value="Ciudad A">Bogota</option>
-          <option value="Ciudad B">Medellin</option>
-          <option value="Ciudad C">Cali</option>
-        </select>
+    <form id="filtros">
+      <label for="filtro-ubicacion">Ubicación:</label>
+      <select id="filtro-ubicacion" aria-label="Filtrar por ubicación">
+        <option value="">Ubicaciones</option>
+        <option value="Ciudad A">Bogotá</option>
+        <option value="Ciudad B">Medellín</option>
+        <option value="Ciudad C">Cali</option>
+      </select>
 
-        <label for="filtro-tipo">Tipo:</label>
-        <select id="filtro-tipo" aria-label="Filtrar por tipo de hospedaje">
-          <option value="">Hospedajes</option>
-          <option value="Hotel">Hotel</option>
-          <option value="Hostal">Hostal</option>
-          <option value="Casa">Casa</option>
-        </select>
+      <label for="filtro-tipo">Tipo:</label>
+      <select id="filtro-tipo" aria-label="Filtrar por tipo de hospedaje">
+        <option value="">Hospedajes</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Hostal">Hostal</option>
+        <option value="Casa">Casa</option>
+      </select>
 
-        <label for="fecha-inicio">Fecha inicio:</label>
-        <input type="date" id="fecha-inicio" name="fecha-inicio">
+      <label for="fecha-inicio">Fecha inicio:</label>
+      <input type="date" id="fecha-inicio" name="fecha-inicio">
 
-        <label for="fecha-final">Fecha final:</label>
-        <input type="date" id="fecha-final" name="fecha-final">
-      </form>
-      <button id="btn-completar" type="button">Completar</button>
+      <label for="fecha-final">Fecha final:</label>
+      <input type="date" id="fecha-final" name="fecha-final">
+    </form>
 
-      <div id="resultados" aria-live="polite" aria-atomic="true"></div>
-    </main>
+    <button id="btn-completar" type="button">Completar</button>
 
-    <footer id="footer">
-    <div style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
-    <p> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+    <div id="resultados" aria-live="polite" aria-atomic="true"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <h2 style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline;">Contáctanos</h2>
+    <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
     <div class="social-icons" aria-label="Redes sociales">
       <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
       <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
       <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
     </div>
     <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
-  </footer>
-    <script>
-  document.getElementById("btn-completar").addEventListener("click", function() {
-    const tipo = document.getElementById("filtro-tipo").value;
+  </footer>
 
-    if (tipo === "Hostal") {
-      window.location.href = "hoteles1.html";
-    } else if (tipo === "Hotel") {
-      window.location.href = "hoteles2.html";
-    } else if (tipo === "Casa") {
-      window.location.href = "hoteles3.html";
-    } else {
-      alert("Por favor selecciona un tipo de hospedaje antes de continuar.");
-    }
-  });
-</script>
+  <script>
+    document.getElementById("btn-completar").addEventListener("click", function() {
+      const tipo = document.getElementById("filtro-tipo").value;
+
+      if (tipo === "Hostal") {
+        window.location.href = "hoteles1.html";
+      } else if (tipo === "Hotel") {
+        window.location.href = "hoteles2.html";
+      } else if (tipo === "Casa") {
+        window.location.href = "hoteles3.html";
+      } else {
+        alert("Por favor selecciona un tipo de hospedaje antes de continuar.");
+      }
+    });
+  </script>
 </body>
 </html>
+
