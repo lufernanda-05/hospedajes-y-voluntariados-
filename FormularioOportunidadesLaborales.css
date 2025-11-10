@@ -1,0 +1,163 @@
+/* ------- RESET ------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------- HEADER ------- */
+.site-header {
+    background-color: #004080;
+    padding: 0.6rem 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #0073e6;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.45rem 0.7rem;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.12);
+}
+
+/* ------- FORMULARIO ------- */
+body {
+    background: #eef6ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor {
+    width: 70%;
+    max-width: 900px;
+    background: white;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: 2px solid #4da2ff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #4da2ff;
+    font-size: 26px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+label {
+    margin: 12px 0 6px;
+    color: #333;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background: #f4f8ff;
+    border: 2px solid #c8ddff;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4da2ff;
+    background: white;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* BOTÓN */
+.boton-enviar {
+    width: 100%;
+    background: #4da2ff;
+    color: white;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background: #1875e8;
+    transform: scale(1.03);
+}
+
+/* ------- FOOTER ------- */
+#footer {
+    background-color: #222f44;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 50px;
+}
+
+.titulo-footer {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #ef96f7;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: 0.2s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+}
+
+/* ------- RESPONSIVE ------- */
+@media (max-width: 720px) {
+.contenedor { width: 90%; }
+.logo { width: 48px; height: 48px; }
+}
