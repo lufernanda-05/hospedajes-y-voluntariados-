@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel - Luz del Camino</title>
+  <style>
+            footer {
+        background-color: #222f44;
+        color: white;
+        padding: 1.5rem 3rem;
+        text-align: center;
+        }
+
+        footer .social-icons a {
+        display: inline-block;
+        margin: 0 1rem;
+        font-size: 2rem;
+        color: white;
+        transition: color 0.3s ease;
+        text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+        color: #28a0f0;
+        }
+        @media (max-width: 720px) {
+        .header-inner {
+            padding: 0 0.6rem;
+        }
+        .logo {
+        width: 48px;
+        height: 48px;
+        }
+        .main-nav {
+        gap: 0.5rem;
+        }
+        .nav-link {
+        font-size: 0.95rem;
+        padding: 0.35rem 0.5rem;
+        }
+        }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    .rating-summary {
+      text-align: center;
+      color: #555;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    .rating-summary span {
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+    .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      width: 85%;
+      margin: 40px auto;
+    }
+
+    .review-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .review-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .stars {
+      color: #000;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .review-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .reviewer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .reviewer img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .reviewer-info {
+      color: #666;
+      font-size: 13px;
+    }
+
+    .reserve-section {
+      text-align: center;
+      margin: 40px 0 60px;
+    }
+
+    .reserve-btn {
+      background-color: #eee;
+      border: none;
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      position: relative;
+    }
+
+    .reserve-btn:hover {
+      background-color: #ccc;
+    }
+
+    .reserve-btn::after {
+      content: '🖱️';
+      position: absolute;
+      right: -35px;
+      top: 6px;
+      font-size: 22px;
+    }
+
+    @media (max-width: 768px) {
+      .reserve-btn::after {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hotel - Luz del Camino</h1>
+  <div class="rating-summary">
+    ⭐ <span>4.1</span> - 3 Reseñas
+  </div>
+
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="stars">★★★★☆</div>
+      <div class="review-title">Un hotel que cree en el arte y la cultura</div>
+      <div class="review-text">
+        Colaboré en la organización de un festival cultural. El hotel apoya activamente a la comunidad y eso lo hace especial.
+      </div>
+      <div class="reviewer">
+        <img src="perfil1.jpg" alt="Foto de Juan">
+        <div class="reviewer-info">
+          <strong>Juan C.</strong><br>
+          22 de marzo de 2025
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★☆</div>
+      <div class="review-title">Sostenibilidad en acción</div>
+      <div class="review-text">
+        Me uní a un proyecto de reciclaje y aprendí mucho sobre el impacto ambiental. El hotel tiene una visión ecológica admirable.
+      </div>
+      <div class="reviewer">
+        <img src="perfil2.jpg" alt="Foto de Valentina">
+        <div class="reviewer-info">
+          <strong>Valentina S.</strong><br>
+          3 de febrero de 2025
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <div class="review-title">Más que un hotel, una experiencia de vida</div>
+      <div class="review-text">
+        El voluntariado me permitió crecer como persona. El hotel combina lujo con compromiso social. ¡Muy recomendado!
+      </div>
+      <div class="reviewer">
+        <img src="perfil3.jpg" alt="Foto de Laura">
+        <div class="reviewer-info">
+          <strong>Laura P.</strong><br>
+          30 de diciembre de 2024
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reserve-section">
+    <button class="reserve-btn">Reserve aquí</button>
+    <li><a href="FormularioHospedaje.html" id="contact-link">reservar</a></li>
+  </div>
+    <footer id="footer">
+    <div style="text-align: center; color: lab(85.35% -31.59 -14.78); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
+    <p style="color: #ddd;"> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+    <div class="social-icons" aria-label="Redes sociales">
+      <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
+      <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
+      <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&dsh=S-433904788%3A1762739809103135&ec=asw-gmail-globalnav-signin&flowEntry=AccountChooser&flowName=GlifWebSignIn&service=mail" aria-label="EMAIL"><i class="fa-regular fa-envelope" style="color: #bc2929;"></i></a>
+    </div>
+    <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
