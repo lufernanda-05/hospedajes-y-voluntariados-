@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <title>Hostal - La mano de Dios</title>
     <style>
+         /* Estilos del pie de página */
+        footer {
+        background-color: #222f44;
+        color: white;
+        padding: 1.5rem 3rem;
+        text-align: center;
+        }
+
+        footer .social-icons a {
+        display: inline-block;
+        margin: 0 1rem;
+        font-size: 2rem;
+        color: white;
+        transition: color 0.3s ease;
+        text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+        color: #28a0f0;
+        }
+        @media (max-width: 720px) {
+        .header-inner {
+            padding: 0 0.6rem;
+        }
+        .logo {
+        width: 48px;
+        height: 48px;
+        }
+        .main-nav {
+        gap: 0.5rem;
+        }
+        .nav-link {
+        font-size: 0.95rem;
+        padding: 0.35rem 0.5rem;
+        }
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -123,6 +160,18 @@
     </style>
 </head>
 <body>
+     <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Menú principal">
+        <a href="register.html" class="nav-link">REGÍSTRATE</a>
+        <a href="inicio.html" class="nav-link">INICIÓN</a>
+      </nav>
+    </div>
+  </header>
     <header>
         <div>&larr; <a href="hospedajes.html" id="contact-link">hospedajes</a></div>
         
@@ -200,7 +249,19 @@
             <img src="20.png" alt="imagen">
             <li><a href="https://maps.app.goo.gl/aGftutQoafjTYoEt8" target="_blank">GoogleMaps</a></li>
         </div>
+
         
+        <footer id="footer">
+        <div style="text-align: center; color: rgb(81, 119, 242); text-decoration: underline; text-decoration-color: #ef96f7;">Contáctanos</div>
+        <p> Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+        <div class="social-icons" aria-label="Redes sociales">
+            <a href="https://www.whatsapp.com/?lang=es" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" style="color: #5af280;"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-square-instagram" style="color: #f27dc7;"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></a>
+        </div>
+        <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
 
