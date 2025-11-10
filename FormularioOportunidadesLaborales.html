@@ -4,168 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Reserva</title>
-
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .contenedor {
-            width: 70%;
-            max-width: 900px;
-            background: #F2F2F2;
-            padding: 40px;
-            margin-top: 40px;
-            border-radius: 30px;
-            border: 3px solid #4da2ff;
-        }
-
-        h2 {
-            text-align: center;
-            font-weight: normal;
-            color: #7c7c7c;
-            margin-bottom: 10px;
-        }
-
-        p.descripcion {
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        label {
-            display: block;
-            margin: 15px 0 8px;
-            color: #333;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            border-radius: 10px;
-            border: none;
-            background: #2b2b2b;
-            color: white;
-            font-size: 14px;
-        }
-
-        textarea {
-            height: 80px;
-            resize: none;
-        }
-
-        .boton-enviar {
-            display: block;
-            width: 100%;
-            background: #e6e6e6;
-            color: #333;
-            padding: 14px;
-            border-radius: 8px;
-            border: none;
-            margin-top: 25px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .boton-enviar:hover {
-            background: #d1d1d1;
-        }
-
-        .mensaje-exito {
-            text-align: center;
-            color: green;
-            margin-top: 20px;
-            display: none;
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="FormularioOportunidadesLaborales.css">
 </head>
+
 <body>
 
-    <div class="contenedor">
-        <h2>Formulario de reserva</h2>
-        <p class="descripcion">
-            Hola, nos complace mucho que quieras ser parte de nosotros en este camino del voluntariado.<br>
-            A continuación vas a poder llenar tu formulario de oportunidades laborales.
-        </p>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo-link">
+            <img src="./fotos/logo.jpg" alt="LOGO" class="logo" />
+        </a>
 
-        <form id="form-reserva">
-            
-            <label>¿En qué aspecto/oportunidad laboral te gustaría ayudar?</label>
-            <input type="text" required>
+        <nav class="main-nav" aria-label="Menú principal">
+            <a href="register.html" class="nav-link">REGÍSTRATE</a>
+            <a href="inicio.html" class="nav-link">INICIO</a>
+        </nav>
+    </div>
+</header>
 
-            <label>¿En qué fechas te gustaría hacerlo?</label>
-            <input type="text" required>
+<div class="contenedor">
+    <h2>Formulario de reserva</h2>
+    <p class="descripcion">
+        Gracias por querer ser parte de nuestro voluntariado. <br>
+        Diligencia la siguiente información para continuar.
+    </p>
 
-            <label>¿Cuántas personas van contigo a este voluntariado?</label>
-            <input type="number" required>
+    <form id="form-reserva">
 
-            <label>Información de las demás personas que van al voluntariado:</label>
-            <textarea></textarea>
+        <label>¿En qué aspecto te gustaría ayudar?</label>
+        <input type="text" required>
 
-            <label>¿Es la primera vez que vas a este voluntariado?</label>
-            <input type="text" required>
+        <label>¿En qué fechas te gustaría hacerlo?</label>
+        <input type="text" required>
 
-            <label>¿Hay alguna información importante que deba saber el proveedor del voluntariado? (Enfermedades, información médica importante, antecedentes)</label>
-            <textarea></textarea>
+        <label>¿Cuántas personas van contigo?</label>
+        <input type="number" required>
 
-            <button type="submit" class="boton-enviar">Enviar formulario</button>
-        </form>
+        <label>Información de los acompañantes:</label>
+        <textarea></textarea>
 
-        <p class="mensaje-exito" id="mensaje-exito">¡Formulario enviado con éxito! ✅</p>
+        <label>¿Es tu primera vez en este voluntariado?</label>
+        <input type="text" required>
+
+        <label>Información importante (salud, antecedentes, etc.)</label>
+        <textarea></textarea>
+
+        <button type="submit" class="boton-enviar">Enviar formulario</button>
+    </form>
+</div>
+
+<footer id="footer">
+    <div class="titulo-footer">Contáctanos</div>
+    <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. KINDNEST PRO siempre está aquí para ayudarte.</p>
+
+    <div class="social-icons">
+      <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
     </div>
 
-    <script>
-        document.getElementById("form-reserva").addEventListener("submit", function(event){
-            event.preventDefault();
-            document.getElementById("mensaje-exito").style.display = "block";
-        });
-    </script>
+    <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
+</footer>
 
-<!-- Code injected by live-server -->
 <script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
+document.getElementById("form-reserva").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("mensaje-exito").style.display = "block";
+});
 </script>
 </body>
 </html>
