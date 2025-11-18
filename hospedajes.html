@@ -20,7 +20,6 @@
       <nav class="main-nav" aria-label="Menú principal">
         <a href="register.html" class="nav-link">REGÍSTRATE</a>
         <a href="inicio.html" class="nav-link">INICIO</a>
-        <a href="#footer" class="nav-link">CONTACTANOS</a>
       </nav>
     </div>
   </header>
@@ -28,13 +27,12 @@
   <main>
     <h1>HOSPEDAJES</h1>
     <form id="filtros">
-      <label for="filtro-ubicacion">Ubicación:</label>
+      <label for="filtro-ubicacion">Tipo:</label>
       <select id="filtro-ubicacion" aria-label="Filtrar por ubicación">
-        <option value="">Ubicaciones</option>
-        <option value="Ciudad A">Bogotá</option>
         <option value="Hotel">Hotel</option>
         <option value="Hostal">Hostal</option>
         <option value="Casa">Casa</option>
+
       </select>
 
       <label for="fecha-inicio">Fecha inicio:</label>
@@ -59,7 +57,7 @@
     </div>
   </footer>
   <script>
-    // javascript para manejar el botón  
+    // javascript para manejar el botón
     document.getElementById("btn-completar").addEventListener("click", function() {
       // Asumiendo que el filtro de tipo es el select de ubicación
       const tipo = document.getElementById("filtro-ubicacion").value;

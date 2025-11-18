@@ -35,8 +35,19 @@
 
         <label>Contraseña</label>
         <input type="password" placeholder="••••••••" required>
+         <label for="filtro" style ="margin-bottom: 15px 15px;font-weight: bold; padding: 10px 15px;
+            background-color: #7cb9fa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px 15px;">Aporte:</label>
+      <select id="filtro" aria-label="Filtrar por ubicación">
+        <option value="busqueda">BUSCAR HOSPEDAJE</option>
+        <option value="op_laboral">BUSCAR OP. LABORAL</option>
+      </select>
 
-        <button type="submit" onclick="window.location.href='inicio.html'">Iniciar Sesion</button>
+        <button type="button" id="iniciar-sesion">Iniciar Sesion</button>
       </form>
 
       <div class="links">
@@ -57,5 +68,15 @@
     </div>
     <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
   </footer>
+  <script>
+        document.getElementById('iniciar-sesion').addEventListener('click', function() {
+            const seleccion = document.getElementById('filtro').value;
+            if (seleccion === 'busqueda') {
+                window.location.href = 'hospedajes.html';
+            } else if (seleccion === 'op_laboral') {
+                window.location.href = 'trabajos.html';
+            }
+        });
+    </script>
 </body>
 </html>

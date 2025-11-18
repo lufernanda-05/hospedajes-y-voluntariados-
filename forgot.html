@@ -31,7 +31,7 @@
         <h2>¿Olvidaste tu contraseña?</h2>
         <p class="subtitle">Ingresa tu correo y recibirás instrucciones para restablecerla</p>
 
-        <form>
+        <form id="passwordRecoveryForm"> <!-- Agregado ID al formulario -->
             <label for="email">Correo electrónico</label>
             <input id="email" type="email" placeholder="correo@ejemplo.com" required>
 
@@ -41,6 +41,7 @@
         <div class="links">
             <a href="login.html">Volver al inicio</a>
         </div>
+        <div class="message" id="message" style="color: rgb(28, 56, 196); margin-top: 10px;"></div> 
 
     </div>
 </div>
@@ -58,5 +59,11 @@
     <p>&copy; 2025 Plataforma de Voluntariados. Todos los derechos reservados.</p>
 </footer>
 
+<script>
+    document.getElementById('passwordRecoveryForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        document.getElementById('message').innerText = 'Recuperación de contraseña enviada. Revisa tu correo.';
+    });
+</script>
 </body>
 </html>
